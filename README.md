@@ -1,6 +1,4 @@
-# Library Carpentry
-
-## Week One: Basics
+## Library Carpentry. Week One: Basics
 
 ### Hour One
 - Setup. Where to get help (in class: stickers up, each other; outside class: GitHub issue for each lesson). Introductions.
