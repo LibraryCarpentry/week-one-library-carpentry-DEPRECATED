@@ -184,7 +184,7 @@ A very simple use of a regular expression would be to locate the same word spell
 
 But it would also match `reorganise`. So there are a bunch of special syntax that help us be more precise.
 
-The first we've seen: square brackets can be used to define a list of range of character to be found. So:
+The first we've seen: square brackets can be used to define a list or range of characters to be found. So:
 
 - `[ABC]` matches A or B or C.
 - `[A-Z]` matches any upper case letter
