@@ -184,9 +184,11 @@ A powerful means of doing this selecting based on file characteristics is to use
 
 As most computational software has regular expression functionality built in and as many computational tasks in libraries are built around complex matching, it is good place for Library Carpentry to start in earnest.
 
+<<<<<<< HEAD
 **SLIDE** A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
-
+=======
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
+>>>>>>> 318ab72d6f1c2ae6dcf1ac1ce9fbd6d82faadc8d
 
 But it would also match `reorganise`. So there are a bunch of special syntax that help us be more precise.
 
