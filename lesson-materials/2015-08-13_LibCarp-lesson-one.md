@@ -125,18 +125,18 @@ If you want computers to be able to process your stuff I'd encourage you to get 
 
 Why?
 
-Without that structured information, our lives would be much poorer. As library and archive people we know this. But I'll linger on this a little longer because for working with data it is especially importance.
+Without that structured information, our lives would be much poorer. As library and archive people we know this. But I'll linger on this a little longer because for working with data it is especially important.
 
 Examining URLs is a good way of thinking about why structuring research data in a consistent and predictable manner might be useful in your work. Good URLs represent with clarity the content of the page they identify, either by containing semantic elements or by using a single data element found across a set or majority of pages.
 
 A typical example of the former are the URLs used by news websites or blogging services. WordPress URLs follow the format:
 
--   `ROOT/YYY/MM/DD/words-of-title-separated-by-hyphens`
+-   `ROOT/YYYY/MM/DD/words-of-title-separated-by-hyphens`
 -   <http://cradledincaricature.com/2015/07/24/code-control-and-making-the-argument-in-the-humanities/>
 
 A similar style is used by news agencies such as a The Guardian newspaper:
 
--   `ROOT/SUB_ROOT/YYY/MMM/DD/words-describing-content-separated-by-hyphens`
+-   `ROOT/SUB_ROOT/YYYY/MMM/DD/words-describing-content-separated-by-hyphens`
 -   <http://www.theguardian.com/uk-news/2014/feb/20/rebekah-brooks-rupert-murdoch-phone-hacking-trial>
 
 In archival catalogues, URLs structured by a single data element are often used. The British Cartoon Archive structures its online archive using the format:
@@ -252,7 +252,7 @@ How would you match publication formats such as 'British Library : London, 2015'
 _____
 ### References
 
-James Baker , "Preserving Your Research Data," *Programming Historian* (30 April 2014), [http://programminghistorian.org/lessons/preserving-your-research-data.html](http://melbourne.resbaz.edu.au/post/95320810834/why-code). The sub-sections 'Plain text formats are your friend' and  'Naming files sensible things is good for you and for your computers' are reworked from this lesson.
+James Baker , "Preserving Your Research Data," *Programming Historian* (30 April 2014), [http://programminghistorian.org/lessons/preserving-your-research-data.html](http://programminghistorian.org/lessons/preserving-your-research-data.html). The sub-sections 'Plain text formats are your friend' and  'Naming files sensible things is good for you and for your computers' are reworked from this lesson.
 
 Owen Stephens, "Working with Data using OpenRefine", *Overdue Ideas" (19 November 2014), [http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/](http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/). The section on 'Regular Expressions' is reworked from this lesson developed by Owen Stephens on behalf of the British Library
 
