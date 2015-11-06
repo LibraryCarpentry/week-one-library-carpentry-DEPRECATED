@@ -47,7 +47,7 @@ How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a s
 
 How would you match a thirteen digital ISBN?
 
-How would you match publication formats such as `British Library : London, 2015' and 'Manchester University Press : Manchester, 1999`?
+How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press : Manchester, 1999`?
 
 _____
 ### Next Week
