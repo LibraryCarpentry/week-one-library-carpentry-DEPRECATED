@@ -37,7 +37,7 @@ How do you match the words `colour` and `color` (case insensitive)?
 
 How would you find `headrest` and `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
 
-How would you find a 4 letter word that ends a string and is preceded by at least one zero?
+How would you find a 4 letter word that begins a string and is preceded by at least one zero?
 
 How do you match any 4 digit string?
 
