@@ -15,15 +15,22 @@ _____
 - `\d` matches any single digit
 - `\w` matches and part of word character (equivalent to [A-Za-z0-9_] )
 - `\s` matches any space, tab, or newline
+- `\b` adds a word boundary
 - `^` defines the start of the string
 - `$` defines the end of the string
-- `*` matches when the proceeding character appears any number of times including zero
-- `+` matches when the proceeding character appears any number of times excluding zero
-- `?` matches when the proceeding character appears one or zero times
-- `{VALUE}` matches the proceeding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
+- `*` matches when the preceeding character appears any number of times including zero
+- `+` matches when the preceeding character appears any number of times excluding zero
+- `?` matches when the preceeding character appears one or zero times
+- `{VALUE}` matches the preceeding character the number of times define by VALUE; ranges can be specified with the syntax `{VALUE,VALUE}`
 - `|` simply means or
 
-Check you regex with regex101: https://regex101.com/
+Check you regex with:
+- regex101 https://regex101.com/
+- rexegper http://regexper.com/
+- myregexp http://myregexp.com/
+
+Test yourself with:
+- Regex Crossword https://regexcrossword.com/
 
 #### Exercise
 
@@ -44,8 +51,6 @@ How do you match any 4 digit string?
 How would you match the date format `dd-MM-yyyy`?
 
 How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only?
-
-How would you match a thirteen digital ISBN?
 
 How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press : Manchester, 1999`?
 

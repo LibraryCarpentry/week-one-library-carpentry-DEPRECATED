@@ -188,7 +188,7 @@ As most computational software has regular expression functionality built in and
 
 A very simple use of a regular expression would be to locate the same word spelled two different ways. For example the regular expression `organi[sz]e` matches both "organise" and "organize".
 
-But it would also match `reorganise`. So there are a bunch of special syntax that help us be more precise.
+But it would also find `reorganise`. So there are a bunch of special syntax that help us be more precise.
 
 The first we've seen: square brackets can be used to define a list or range of characters to be found. So: **SLIDE**
 
@@ -202,6 +202,7 @@ Then there are: **SLIDE**
 - `\d` matches any single digit
 - `\w` matches any part of word character (equivalent to `[A-Za-z0-9]`)
 - `\s` matches any space, tab, or newline
+- `\b` adds a word boundary. So putting this either side of a stops the regular expression matching longer variants of words.
 - `^` defines the start of the string
 - `$` defines the end of the string
 
@@ -217,37 +218,55 @@ Other useful special characters are **SLIDE**:
 
 {Questions}: So, what are these going to match?
 
-- **SLIDE** `^[Oo]rgani.e\w*$`
-- **SLIDE** `^[Oo]rgani.e\w+$`
-- **SLIDE** `^[Oo]rgani.e\w?$`
-- **SLIDE** `^[Oo]rgani.e\w{2}$`
-- **SLIDE** `^[Oo]rgani.e$|^[Oo]rgani.e\w{2}$`
+- **SLIDE** `^[Oo]rgani.e\w*`
+- **SLIDE** `[Oo]rgani.e\w+$`
+- **SLIDE** `^[Oo]rgani.e\w?\b`
+- **SLIDE** `\b[Oo]rgani.e\w{2}\b`
+- **SLIDE** `\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b`
 
 **SLIDE** This logic is super useful when you have lots of files in a directory, when those files have logical file names, and when you want to isolate a selection of files. Or for looking at cells in spreadsheets for certain values. Or for extracting some data from a columns of a spreadsheet to make a new columns. I could go on. The point is, it is super useful in many contexts. To embed this knowledge we won't - however - be using computers. Instead we'll use pen and paper. I want you to work in teams of 5 or 6 to work through the exercises in the handout. I have an answer sheet over here if you want to check where you've gone wrong. When you finish, I'd like you to split your team into two groups and write each other some tests. These should include a) strings you want the other team to write regex for and b) regular expressions you want the other team to work out what they would match. Then test each other on the answers. If you want to check your logic, use [regex101](https://regex101.com/).
 
-#### Handout
+#### Exercise
 
 What does `Fr[ea]nc[eh]` match?
 
-What does `Fr[ea]nc[eh]$` match?
+- this matches `France`, `French`, `Frence`, and `Franch`. It also matches any string that had characters either side of these words so `Francer`, `dakkldakFrench`, or `Franch911`.
 
-What would match strings that begin with `French` and `France` only? {`France|French`}
+What does `Fr[ea]nc[eh]/` match?
 
-How do you match the words `colour` and `color` (case insensitive)? {`colou?r`}
+- this matches `France`, `French`, `Frence`, and `Franch`. It also matches any string that had character before these words, so `dakkldakFrench` (but not `Francer` or `Franch911`).
 
-How would you find `headrest` and `head rest` but not `head  rest`? {head\s?rest}
+What would match strings that begin with `French` and `France` only?
 
-How would you find a 4 letter word that ends a string and is preceded by at least one zero? {`0+[a-z]{4}$`}
+- `^France/|^French/`
 
-How do you match any 4 digit string? {`\d{4}`}
+How do you match the words `colour` and `color` (case insensitive)?
 
-How would you match the date format `dd-MM-yyyy`? {`\d{2}-\d{2}-\d{4}`}
+- There are two ways of thinking about this. In real life, you *should* only come across the case insensitive variations `colour`, `color`, `Colour`, `Color`, `COLOUR`, and `COLOR`. So one option would be `^[Cc]olou?r$|COLOU?R$`. However, you can also use `/colou?r/i` to find all case insensitive matches.
 
-How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only? {`\d{2}-\d{2}-\d{2,4}$`}
+How would you find `headrest` and `head rest` but not `head  rest` (that is, with two spaces between `head` and `rest`?
 
-How would you match a thirteen digital ISBN? {`^\d{13}$`}
+- `/head\s?rest/`. Note this will also match zero or one tabs or newline characters, but it should work in most real world cases :)
 
-How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press : Manchester, 1999`?  {`.* : .*, \d{4}`}
+How would you find a 4 letter word that ends a string and is preceded by at least one zero?
+
+- `/0+[a-z]{4}$`
+
+How do you match any 4 digit string anywhere?
+
+-`\d{4}`
+ 
+How would you match the date format `dd-MM-yyyy`?
+
+- `/\d{2}-\d{2}-\d{4}\/`
+
+How would you match the date format `dd-MM-yyyy` or `dd-MM-yy` at the end of a string only?
+
+- `/\d{2}-\d{2}-\d{2,4}$`
+
+How would you match publication formats such as `British Library : London, 2015` and `Manchester University Press : Manchester, 1999`?
+
+- `/.* : .*, \d{4}/`
 
 _____
 ## Next week
