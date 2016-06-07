@@ -1,4 +1,4 @@
-**NOTE: materials used for initial workshop. Now superceded by [https://github.com/data-lessons/library-data-intro](https://github.com/data-lessons/library-data-intro)**
+**NOTE: materials used for initial workshop. Now superseded by [Data intro for librarians](https://github.com/data-lessons/library-data-intro)**
 
 ## Library Carpentry. Week One: Basics
 
