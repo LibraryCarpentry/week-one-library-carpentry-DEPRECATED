@@ -1,3 +1,5 @@
+**NOTE: materials used for initial workshop. Now superceded by [https://github.com/data-lessons/library-data-intro](https://github.com/data-lessons/library-data-intro)**
+
 ## Library Carpentry. Week One: Basics
 
 This repository contains lesson materials for Library Carpentry week one, held 9 November 2015 at City University London. Slides used on the evening are here and for ease of use also on [Slideshare](http://www.slideshare.net/drjwbaker/library-carpentry-week-one-basics).
